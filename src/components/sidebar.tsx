@@ -18,6 +18,7 @@ import {
   Home,
   Linkedin,
 } from "lucide-react"
+import { ThemeSwitcher } from "./ThemeSwitcher"
 
 const tools = [
   { name: "All Tools", icon: Grid, badge: "2052" },
@@ -50,8 +51,9 @@ const tools = [
 export function Sidebar() {
   return (
     <div className="w-64 border-r bg-background flex flex-col h-screen">
-      <div className="p-4 border-b">
+      <div className="p-4 border-b flex items-center justify-between">
         <h1 className="text-xl font-mono font-bold">Galaxy.ai</h1>
+        <ThemeSwitcher />
       </div>
 
       <div className="flex-1 overflow-y-auto">
